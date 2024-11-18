@@ -31,9 +31,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Amine Sadali',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_email: 'amine.sadali@gmail.com',
           message: form.message
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -76,8 +76,9 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
 
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in Touch</h1>
-
+        <h1 className="head-text">
+          Get in <span className="blue-orange-gradient_text">Touch</span>
+        </h1>
         <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col gap-7 mt-14">
           <label className="text-black-500 font-semibold">
             Name
